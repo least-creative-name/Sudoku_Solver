@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overall"
+    android:orientation="vertical"
+    android:background="@drawable/polygonal_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/inputPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Camera Preview -->
+    <FrameLayout
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!-- /End Camera Preview -->
+
+    <!-- Overlay -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/overlay"
+        android:background="@drawable/polygonal_background"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:text = "Aim the square view onto the sudoku puzzle"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Image"
+            android:textSize="17sp"
+            android:background="#d6c16f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/GoBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textSize="17sp"
+            android:background="#FFA07A"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            />
+        <!--- Put your Content Here -->
+
+    </RelativeLayout>
+    <!-- /End Overlay -->
+
+</RelativeLayout>
